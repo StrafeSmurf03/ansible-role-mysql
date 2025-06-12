@@ -1,0 +1,4 @@
+- name: Define mysql_daemon.
+  ansible.builtin.set_fact:
+    mysql_daemon: "{{ __mysql_daemon }}"
+  when: mysql_daemon is not defined
